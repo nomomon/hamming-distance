@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    margin:0;
+    background: rgb(54, 54, 54);
+}
+
+#numberInputBox{
+    margin-top: 20px;
+}
+
+#numberInput{
+    border: none;
+    border-radius: calc(10e10px);
+    padding: 10px;
+    margin: auto 10px;
+    height: 40px;
+    width: 200px;
+    border:1px solid #eaeaea;
+    outline:none;
+    vertical-align: middle;
+}
+
+#numberInput:hover{
+    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+}
+#numberInput:focus{
+    border-color:#4d90fe;
+}
+
+#addNumber{
+    border: none;
+    border-radius: calc(10e10px);
+    margin: auto 10px;
+    /* padding: 5px; */
+    height: 40px;
+    width: 40px;
+    border:1px solid #eaeaea;
+    outline:none;
+    text-align: center;
+    font-size:30px;
+    vertical-align: middle;
+}
+
+#numberList{
+    color:white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type: none;
 }
