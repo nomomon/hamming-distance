@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hamming-distance/static/css/main.ca203e6d.css",
-    "main.js": "/hamming-distance/static/js/main.7ad37fdc.js",
+    "main.css": "/hamming-distance/static/css/main.d6521f4e.css",
+    "main.js": "/hamming-distance/static/js/main.ef1f9e7f.js",
     "static/js/787.bcfdd92f.chunk.js": "/hamming-distance/static/js/787.bcfdd92f.chunk.js",
     "index.html": "/hamming-distance/index.html",
-    "main.ca203e6d.css.map": "/hamming-distance/static/css/main.ca203e6d.css.map",
-    "main.7ad37fdc.js.map": "/hamming-distance/static/js/main.7ad37fdc.js.map",
+    "main.d6521f4e.css.map": "/hamming-distance/static/css/main.d6521f4e.css.map",
+    "main.ef1f9e7f.js.map": "/hamming-distance/static/js/main.ef1f9e7f.js.map",
     "787.bcfdd92f.chunk.js.map": "/hamming-distance/static/js/787.bcfdd92f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca203e6d.css",
-    "static/js/main.7ad37fdc.js"
+    "static/css/main.d6521f4e.css",
+    "static/js/main.ef1f9e7f.js"
   ]
 }
