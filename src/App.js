@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-    const [list, setList] = useState(['12321', '12312', '48322', '23923']);
+    const [list, setList] = useState([]);
     const [color, setColor] = useState([]);
     const [run, setRun] = useState(false);
 
