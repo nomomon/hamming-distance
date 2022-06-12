@@ -5,22 +5,16 @@ function NumberList({ list, setList, color, setColor, run }) {
         setList(newList);
     }
 
-    function highlight(number_i, digit_i, color) {
+    function drawConnection(number_i, digit_i, color) {
         if (color === undefined || color[number_i] === undefined) {
-            return "not";
+            return '';
         }
         else {
             if (color[number_i][digit_i] === 0) {
-                return 'not'
+                return ''
             }
             else if (color[number_i][digit_i] === 1) {
-                return 'highlightUp'
-            }
-            else if (color[number_i][digit_i] === 10) {
-                return 'highlightDown'
-            }
-            else if (color[number_i][digit_i] === 11) {
-                return 'highlightDown highlightUp'
+                return 'connectDown'
             }
             else {
                 throw `color doesn't exist "${color[number_i][digit_i]}"`;
@@ -35,7 +29,7 @@ function NumberList({ list, setList, color, setColor, run }) {
                     <li key={number_i}>
                         {number.split('').map((digit, digit_i) => {
                             return (
-                                <span className={highlight(number_i, digit_i, color)}>
+                                <span className={drawConnection(number_i, digit_i, color)}>
                                     {digit}
                                 </span>
                             )

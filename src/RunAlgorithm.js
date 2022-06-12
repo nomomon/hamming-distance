@@ -21,7 +21,6 @@ function RunAlgorithm({ list, setList, color, setColor, run, setRun }) {
             color = []
             for (let i = 0; i < list.length; i++) {
                 color[i] = hammingDifferenceColoring(
-                    (i - 1 < 0) ? null : list[i - 1],
                     list[i],
                     (i + 1 < list.length) ? list[i + 1] : null
                 );

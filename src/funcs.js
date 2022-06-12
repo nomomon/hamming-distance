@@ -1,11 +1,10 @@
-function hammingDifferenceColoring(a, b, c) {
-    if (a == null) a = b;
-    if (c == null) c = b;
+function hammingDifferenceColoring(a, b) {
+    if (b == null) b = a;
 
     let colornig = [];
 
     for (let i = 0; i < a.length; i++) {
-        colornig.push((b[i] !== a[i]) * 1 + (b[i] !== c[i]) * 10);
+        colornig.push(Number(b[i] !== a[i]));
     }
     return colornig;
 }

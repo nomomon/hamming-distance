@@ -1,6 +1,6 @@
 function sum(a) {
     let i = 0;
-    a.forEach(el => { if (el >= 10) i++; })
+    a.forEach(el => i += el)
     return i;
 }
 
