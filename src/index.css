@@ -54,62 +54,57 @@ body{
 }
 
 #numberList li{
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #363636;
+}
+
+#numberList li.grow:hover{
+    font-size: 1.2em;
 }
 
 #numberList li button{
     display: none;
-    border-radius: calc(10e10px);
     font-family: 'Courier New', Courier, monospace;
-}
-
-#numberList li:hover{
-    font-size: 1.2em;
+    font-size: 1rem;
+    border-radius: calc(10e10px);
+    margin-left:.2rem;
 }
 #numberList li:hover button{
     display: inline-block;
-    margin-left:.2em;
-    margin-top: -.2em;
-}
-#numberList li:hover span.highlightUp::before{
-    content: "";
 }
 
-span.highlightUp, span.highlightDown{
-    background-color: #363636;
+
+span.connectDown{
     position: relative;
 }
-span.highlightUp::before{
+span.connectDown::before{
     content: "|";
     position: absolute;
-    top:-1em;
+    bottom:-1.5rem;
     z-index: -1;
 
 }
-span.highlightUp.highlightDown{
-    color:white;
-}
 
 #hammingDistanceTable{
-    position:fixed;
-    top:calc(55px);
+    position:absolute;
+    top:3.8rem;
     left:calc(50vw + 10rem);
     color:white;
 }
 
 .hammingDistance{
-    font-size: 1.2rem;
-    margin-top:calc(2rem);
+    font-size: 1rem;
+    margin-top:2.1rem;
     position: relative;
 }
 
 .hammingDistance::before{
-    content: "----------–>";
+    content: "–––––––––––▻";
+    font-size: 1.2rem;
+    text-align: center;
     position: absolute;
-    top:-.2rem;
+    top:-.3rem;
     left:-5rem;
     z-index: -1;
-
-
 }

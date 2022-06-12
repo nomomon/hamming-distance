@@ -26,7 +26,7 @@ function NumberList({ list, setList, color, setColor, run }) {
         <ul id='numberList'>
             {list.map((number, number_i) => {
                 return (
-                    <li key={number_i}>
+                    <li key={number_i} className={(!run) ? 'grow' : ''}>
                         {number.split('').map((digit, digit_i) => {
                             return (
                                 <span className={drawConnection(number_i, digit_i, color)}>
