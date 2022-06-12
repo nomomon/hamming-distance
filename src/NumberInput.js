@@ -21,7 +21,12 @@ function NumberInput({ requiredNumberLength, list, setList, setColor, setRun }) 
 
     return (
         <div id="numberInputBox">
-            <input id="numberInput" onKeyDown={addNumberOnEnter} />
+            <input
+                id="numberInput"
+                placeholder="e.g. 12345"
+                autoFocus={true}
+                onKeyDown={addNumberOnEnter}
+            />
             <button id="addNumber" onClick={addNumber}>+</button>
         </div>
     );

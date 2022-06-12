@@ -2,7 +2,7 @@ import hammingDifferenceColoring from './funcs';
 
 function RunAlgorithm({ list, setList, color, setColor, run, setRun }) {
     if (run) return (
-        <button onClick={() => {
+        <button id="restart" onClick={() => {
             setColor([]);
             setRun(false);
         }
@@ -12,7 +12,12 @@ function RunAlgorithm({ list, setList, color, setColor, run, setRun }) {
     );
 
     return (
-        <button onClick={() => {
+        <button id="run" onClick={() => {
+            if (list.length < 2) {
+                alert("Enter at least two numbers")
+                return;
+            }
+
             // sort list
             list.sort((a, b) => Number(a) - Number(b))
             setList([...list]);
