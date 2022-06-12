@@ -10,7 +10,7 @@ function App() {
     return (
         <div className="App">
             {NumberInput({ requiredNumberLength: 5, list, setList })}
-            {NumberList({ list })}
+            {NumberList({ list, setList })}
             {RunAlgorithm({ list, setList })}
         </div>
     );

@@ -49,4 +49,32 @@ body{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     list-style-type: none;
+    margin: auto;
+}
+
+#numberList li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#numberList li button{
+    display: none;
+    border-radius: calc(10e10px);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#numberList li:hover button{
+    display: inline-block;
+    right:-10%;
+}
+
+span.highlightUp{
+    background-color:#FFFF00;
+}
+span.highlightDown{
+    background-color:#0000FF;
+}
+span.highlightUp.highlightDown{
+    /* background-color:#00FF00; */
+    background-color:#808080;
 }
