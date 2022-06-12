@@ -1,4 +1,4 @@
-function NumberInput({ requiredNumberLength, list, setList }) {
+function NumberInput({ requiredNumberLength, list, setList, setColor, setRun }) {
     function addNumber() {
         let number = document.getElementById("numberInput").value.trim();
 
@@ -9,6 +9,8 @@ function NumberInput({ requiredNumberLength, list, setList }) {
         else {
             alert("Please enter a " + requiredNumberLength + " digit number.");
         }
+        setRun(false);
+        setColor([]);
     }
     function addNumberOnEnter(event) {
         if (event.key === "Enter") {

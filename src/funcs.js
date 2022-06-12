@@ -1,9 +1,13 @@
-function hammingDifference(a, b) {
-    let different_indecies = [];
+function hammingDifferenceColoring(a, b, c) {
+    if (a == null) a = b;
+    if (c == null) c = b;
+
+    let colornig = [];
+
     for (let i = 0; i < a.length; i++) {
-        different_indecies.append(a[i] !== b[i]);
+        colornig.push((b[i] !== a[i]) * 1 + (b[i] !== c[i]) * 10);
     }
-    return different_indecies;
+    return colornig;
 }
 
-export default hammingDifference;
+export default hammingDifferenceColoring;

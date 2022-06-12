@@ -4,7 +4,8 @@
 
 body{
     margin:0;
-    background: rgb(54, 54, 54);
+    background: #363636;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #numberInputBox{
@@ -46,15 +47,15 @@ body{
 
 #numberList{
     color:white;
-    font-size: 20px;
+    font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
     list-style-type: none;
     margin: auto;
 }
 
 #numberList li{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 #numberList li button{
@@ -63,18 +64,52 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+#numberList li:hover{
+    font-size: 1.2em;
+}
 #numberList li:hover button{
     display: inline-block;
-    right:-10%;
+    margin-left:.2em;
+    margin-top: -.2em;
+}
+#numberList li:hover span.highlightUp::before{
+    content: "";
 }
 
-span.highlightUp{
-    background-color:#FFFF00;
+span.highlightUp, span.highlightDown{
+    background-color: #363636;
+    position: relative;
 }
-span.highlightDown{
-    background-color:#0000FF;
+span.highlightUp::before{
+    content: "|";
+    position: absolute;
+    top:-1em;
+    z-index: -1;
+
 }
 span.highlightUp.highlightDown{
-    /* background-color:#00FF00; */
-    background-color:#808080;
+    color:white;
+}
+
+#hammingDistanceTable{
+    position:fixed;
+    top:calc(55px);
+    left:calc(50vw + 10rem);
+    color:white;
+}
+
+.hammingDistance{
+    font-size: 1.2rem;
+    margin-top:calc(2rem);
+    position: relative;
+}
+
+.hammingDistance::before{
+    content: "----------–>";
+    position: absolute;
+    top:-.2rem;
+    left:-5rem;
+    z-index: -1;
+
+
 }
