@@ -87,13 +87,15 @@ span.connectDown::before{
 
 #hammingDistanceTable{
     position:absolute;
-    top:14.8rem;
+    top:16rem;
     left:calc(50vw + 10rem);
 }
 
+
 .hammingDistance{
     font-size: 1rem;
-    margin-top:2.1rem;
+    margin-top:1.1rem;
+    padding-bottom:1rem;
     position: relative;
 }
 
@@ -123,4 +125,16 @@ button#run, button#restart{
 
 #context p{
     text-align: justify;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .hammingDistance::before{
+        content: "–––▻";
+        left:0;
+    }
+
+    #hammingDistanceTable{
+        left:calc(50vw + 5rem);
+    }
 }
